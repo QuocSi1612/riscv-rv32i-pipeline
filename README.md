@@ -1,5 +1,6 @@
 # RTL-level datapath of a 5-stage pipelined RISC-V processor.
 RTL-level datapath of a 5-stage pipelined processor illustrating stage partitioning, pipeline registers, control signal propagation, ALU execution, memory access, and branch resolution.
+
 <img width="1245" height="739" alt="pipelineimg" src="https://github.com/user-attachments/assets/4830a462-bb2e-42ef-82a3-c532599ef532" />
 
 # Simulation on ModelSim
