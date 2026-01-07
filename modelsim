@@ -1,0 +1,29 @@
+delete wave *
+
+# Clock / reset
+add wave /tb/clk
+add wave /tb/rst_n
+
+# PC
+add wave -radix hex /tb/dut/pc
+add wave -radix hex /tb/dut/pc_next
+add wave -radix hex /tb/dut/pc_four
+
+# Instruction flow
+add wave -radix hex /tb/dut/instruction
+add wave -radix hex /tb/dut/ID_inst
+add wave -radix hex /tb/dut/EX_inst
+add wave -radix hex /tb/dut/MEM_inst
+add wave -radix hex /tb/dut/WB_inst
+
+# Regfile
+add wave /tb/dut/reg_file/i_rd_wren
+add wave -radix unsigned /tb/dut/reg_file/i_rd_addr
+add wave -radix hex /tb/dut/reg_file/i_rd_data
+add wave -radix hex /tb/dut/reg_file/registers
+# DMEM write/read interface
+add wave -radix hex /tb/dut/load_store_unit/dmem_i/i_lsu_addr
+add wave -radix hex /tb/dut/load_store_unit/dmem_i/i_st_data
+add wave -radix bin /tb/dut/load_store_unit/dmem_i/i_lsu_wren
+add wave -radix bin /tb/dut/load_store_unit/dmem_i/i_control
+add wave -radix hex /tb/dut/load_store_unit/dmem_i/o_dmem_data
